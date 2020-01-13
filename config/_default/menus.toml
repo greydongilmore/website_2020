@@ -40,7 +40,19 @@
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 70
+[[menu.main]]
+  name = "CV"
+  weight = 7
+  hasChildren = true
+  
+[[menu.main]]
+  name = "CV Short"
+  parent = "CV"
+  url = "files/cv/CVshort.pdf"
+  target="_blank"
+  
+[[menu.main]]
+  name = "CV Long"
+  parent = "CV"
+  url = "files/cv/CVgithub.pdf"
+  target="_blank"
