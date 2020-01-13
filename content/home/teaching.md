@@ -47,6 +47,7 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+
 I am a teaching instructor for the following courses at Western University:
 
 - PHYSIOL2130: Human Physiology (2016-Present)
