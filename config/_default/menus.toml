@@ -18,17 +18,17 @@
 #  url = "#projects"
 #  weight = 30
 
-[[menu]]
+[[main]]
   name = "Grants"
   url = "#grants"
   weight = 40
 
-[[menu]]
+[[main]]
   name = "Teaching"
   url = "#teaching"
   weight = 50
 
-[[menu]]
+[[main]]
   name = "Training"
   url = "#training"
   weight = 60
@@ -40,19 +40,19 @@
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-[[menu]]
+[[main]]
   name = "CV"
   weight = 80
-  hasChildren = true
+  identifier = "cv_main"
   
-[[menu]]
+[[main]]
   name = "CV Short"
-  parent = "CV"
+  parent = "cv_main"
   url = "files/cv/CVshort.pdf"
   target="_blank"
   
-[[menu]]
+[[main]]
   name = "CV Long"
-  parent = "CV"
+  parent = "cv_main"
   url = "files/cv/CVgithub.pdf"
   target="_blank"
