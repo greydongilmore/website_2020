@@ -1,4 +1,4 @@
-+++
+---
 title: "Effects of Deep Brain Stimulation of the Subthalamic Nucleus Settings on Voice Quality, Intensity, and Prosody in Parkinson's Disease: Preliminary Evidence for Speech Optimization"
 authors:
 - Anita Abeyesekera
@@ -31,7 +31,7 @@ abstract: ""
 summary: ""
 
 tags:
-- []
+- ""
 featured: false
 
 # links:
@@ -43,7 +43,7 @@ url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: "https://www.cambridge.org/core/journals/canadian-journal-of-neurological-sciences/article/effects-of-deep-brain-stimulation-of-the-subthalamic-nucleus-settings-on-voice-quality-intensity-and-prosody-in-parkinsons-disease-preliminary-evidence-for-speech-optimization/81DD2F30EDF5D23E369768189BECB734"
+url_source: 'https://www.cambridge.org/core/journals/canadian-journal-of-neurological-sciences/article/effects-of-deep-brain-stimulation-of-the-subthalamic-nucleus-settings-on-voice-quality-intensity-and-prosody-in-parkinsons-disease-preliminary-evidence-for-speech-optimization/81DD2F30EDF5D23E369768189BECB734'
 url_video: ''
 
 # Featured image
@@ -66,7 +66,7 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
-+++
+---
 
 {{% alert note %}}
 Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
