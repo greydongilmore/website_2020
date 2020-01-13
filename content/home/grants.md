@@ -49,10 +49,9 @@ subtitle = ""
 +++
 
 ### __Graduate Student Award__
-
-- __Year:__ 2020-2022
-- __Granting Agency:__ Parkinson’s Society of Canada
-- __Amount:__ $20,000 CAD
+    + __Year:__ 2020-2022
+    + __Granting Agency:__ Parkinson’s Society of Canada
+    + __Amount:__ $20,000 CAD
 
 ### __Intern Talentedge Program__
 
