@@ -5,7 +5,7 @@ authors:
 - Scott Adams
 - Cynthia Mancinelli
 - Thea Knowles
-- **admin**
+- admin
 - Mehdi Delrobaei
 - Mandar Jog
 date: "2019-01-31T00:00:00"
