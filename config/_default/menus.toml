@@ -42,7 +42,7 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[menu.main]]
   name = "CV"
-  weight = 7
+  weight = 70
   hasChildren = true
   
 [[menu.main]]
