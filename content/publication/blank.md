@@ -1,9 +1,6 @@
 ---
 title: ""
 authors:
-- 
-- admin
-- 
 date: ""
 doi: ""
 
