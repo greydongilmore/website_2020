@@ -47,34 +47,27 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-
-
-
 ### __Graduate Student Award__
-    + __Year:__ 2020-2022
-    + __Granting Agency:__ Parkinson’s Society of Canada
-    + __Amount:__ $20,000 CAD
+  * __Year:__ 2020-2022
+  * __Granting Agency:__ Parkinson’s Society of Canada
+  * __Amount:__ $20,000 CAD
 
 ### __Intern Talentedge Program__
-
-- __Year:__ 2017-2019
-- __Granting Agency:__ OCE Talent Edge Internship Program 
-- __Amount:__ $60,000 CAD
+  * __Year:__ 2017-2019
+  * __Granting Agency:__ OCE Talent Edge Internship Program 
+  * __Amount:__ $60,000 CAD
 
 ### __Graduate Student Award__
-
-- __Year:__ 2017-2019
-- __Granting Agency:__ Parkinson’s Society of Canada
-- __Amount:__ $40,000 CAD
+  * __Year:__ 2017-2019
+  * __Granting Agency:__ Parkinson’s Society of Canada
+  * __Amount:__ $40,000 CAD
 
 ### __Graduate Student Innovation Scholars__
-
-- __Year:__ 2017
-- __Granting Agency:__ WORLDDiscoveries – Western University
-- __Amount:__ $1,500 CAD
+  * __Year:__ 2017
+  * __Granting Agency:__ WORLDDiscoveries – Western University
+  * __Amount:__ $1,500 CAD
 
 ### __Canadian Graduate Scholarship__
-
-- __Year:__ 2014-2016
-- __Granting Agency:__ Canadian Institute of Health Research
-- __Amount:__ $37,000 CAD
+  * __Year:__ 2014-2016
+  * __Granting Agency:__ Canadian Institute of Health Research
+  * __Amount:__ $37,000 CAD
