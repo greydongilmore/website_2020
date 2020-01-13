@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Greydon Gilmore
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,32 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Ph.D. Candidate in Biomedical Engineering
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Western University
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Deep brain stimulation
+- Machine learning
+- Signal processing
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Biomedical Engineering
+    institution: Western University
+    year: 2021
+  - course: M.Sc. in Neuroscience
+    institution: Western University
+    year: 2015
+  - course: B.Sc. in Neuroscience
+    institution: Carleton University
+    year: 2013
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -70,6 +70,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+<DIV align="justify">
+__Greydon Gilmore__ is a current Ph.D. Candidate in Biomedical Engineering in the lab of [Dr. Mandar Jog](http://www.schulich.uwo.ca/cns/people/bios_neurologists/bio-jog.html) and [Dr. Rajni Patel](https://www.eng.uwo.ca/electrical/faculty/patel_r/index.html). His research interests include deep brain stimulation and localization techniques for electrodes post-operation. He has several industry partnered grants focused on improving precision and outcome of deep brain stimulation surgery for movement disorders.
+</DIV>
