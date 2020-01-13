@@ -52,7 +52,7 @@ social:
   icon_pack: ai
   link: https://scholar.google.ca/citations?user=0zrqWjsAAAAJ&hl=en&oi=ao
 - icon: linkedin
-  icon_pack: fa
+  icon_pack: fab
   link: https://www.linkedin.com/in/greydongilmore
 - icon: researchgate
   icon_pack: ai
