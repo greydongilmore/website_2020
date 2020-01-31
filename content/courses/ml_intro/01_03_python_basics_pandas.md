@@ -24,14 +24,12 @@ The first main data type we will learn about for pandas is the Series data type.
 
 Let's explore this concept through some examples:
 
-
 ```python
 import numpy as np
 import pandas as pd
 ```
 
 You can convert a list,numpy array, or dictionary to a Series:
-
 
 ```python
 labels = ['a','b','c']
@@ -42,98 +40,63 @@ d = {'a':10,'b':20,'c':30}
 
 ** Using Lists**
 
-
 ```python
 pd.Series(data=my_list)
 ```
-
-
-
 
     0    10
     1    20
     2    30
     dtype: int64
-
-
-
 
 ```python
 pd.Series(data=my_list,index=labels)
 ```
 
-
-
-
     a    10
     b    20
     c    30
     dtype: int64
-
-
-
 
 ```python
 pd.Series(my_list,labels)
 ```
 
-
-
-
     a    10
     b    20
     c    30
     dtype: int64
 
-
-
 ** NumPy Arrays **
-
 
 ```python
 pd.Series(arr)
 ```
-
-
-
 
     0    10
     1    20
     2    30
     dtype: int64
 
-
-
-
 ```python
 pd.Series(arr,labels)
 ```
-
-
-
 
     a    10
     b    20
     c    30
     dtype: int64
 
-
-
 ** Dictionary**
-
 
 ```python
 pd.Series(d)
 ```
 
-
-
-
     a    10
     b    20
     c    30
     dtype: int64
-
 
 ### Data in a Series
 
@@ -143,15 +106,10 @@ A pandas Series can hold a variety of object types:
 pd.Series(data=labels)
 ```
 
-
-
-
     0    a
     1    b
     2    c
     dtype: object
-
-
 
 
 ```python
@@ -159,16 +117,12 @@ pd.Series(data=labels)
 pd.Series([sum,print,len])
 ```
 
-
-
-
     0      <built-in function sum>
     1    <built-in function print>
     2      <built-in function len>
     dtype: object
 
-
-## Using an Index
+### Using an Index
 
 The key to using a Series is understanding its index. Pandas makes use of these index names or numbers by allowing for fast look ups of information (works like a hash table or dictionary).
 
@@ -178,13 +132,9 @@ Let's see some examples of how to grab information from a Series. Let us create 
 ser1 = pd.Series([1,2,3,4],index = ['USA', 'Germany','USSR', 'Japan'])                                   
 ```
 
-
 ```python
 ser1
 ```
-
-
-
 
     USA        1
     Germany    2
@@ -192,20 +142,13 @@ ser1
     Japan      4
     dtype: int64
 
-
-
-
 ```python
 ser2 = pd.Series([1,2,5,4],index = ['USA', 'Germany','Italy', 'Japan'])                                   
 ```
 
-
 ```python
 ser2
 ```
-
-
-
 
     USA        1
     Germany    2
@@ -213,29 +156,17 @@ ser2
     Japan      4
     dtype: int64
 
-
-
-
 ```python
 ser1['USA']
 ```
 
-
-
-
     1
 
-
-
 Operations are then also done based off of index:
-
 
 ```python
 ser1 + ser2
 ```
-
-
-
 
     Germany    4.0
     Italy      NaN
@@ -244,36 +175,29 @@ ser1 + ser2
     USSR       NaN
     dtype: float64
 
-
 Let's stop here for now and move on to DataFrames, which will expand on the concept of Series!
-# DataFrames
+
+## DataFrames
 
 DataFrames are the workhorse of pandas and are directly inspired by the R programming language. We can think of a DataFrame as a bunch of Series objects put together to share the same index. Let's use pandas to explore this topic!
-
 
 ```python
 import pandas as pd
 import numpy as np
 ```
 
-
 ```python
 from numpy.random import randn
 np.random.seed(101)
 ```
 
-
 ```python
 df = pd.DataFrame(randn(5,4),index='A B C D E'.split(),columns='W X Y Z'.split())
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -327,18 +251,13 @@ df
 </div>
 
 
-
-## Selection and Indexing
+### Selection and Indexing
 
 Let's learn the various methods to grab data from a DataFrame
-
 
 ```python
 df['W']
 ```
-
-
-
 
     A    2.706850
     B    0.651118
@@ -346,18 +265,12 @@ df['W']
     D    0.188695
     E    0.190794
     Name: W, dtype: float64
-
-
-
 
 ```python
 # Pass a list of column names
 df[['W','Z']]
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -397,16 +310,10 @@ df[['W','Z']]
 </table>
 </div>
 
-
-
-
 ```python
 # SQL Syntax (NOT RECOMMENDED!)
 df.W
 ```
-
-
-
 
     A    2.706850
     B    0.651118
@@ -415,36 +322,23 @@ df.W
     E    0.190794
     Name: W, dtype: float64
 
-
-
 DataFrame Columns are just Series
-
 
 ```python
 type(df['W'])
 ```
 
-
-
-
     pandas.core.series.Series
 
-
-
-**Creating a new column:**
-
+#### Creating a new column
 
 ```python
 df['new'] = df['W'] + df['Y']
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -503,17 +397,11 @@ df
 </table>
 </div>
 
-
-
-** Removing Columns**
-
+#### Removing Columns
 
 ```python
 df.drop('new',axis=1)
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -565,18 +453,12 @@ df.drop('new',axis=1)
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 # Not inplace unless specified!
 df
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -634,20 +516,13 @@ df
 </table>
 </div>
 
-
-
-
 ```python
 df.drop('new',axis=1,inplace=True)
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -701,16 +576,11 @@ df
 </div>
 
 
-
 Can also drop rows this way:
-
 
 ```python
 df.drop('E',axis=0)
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -756,17 +626,11 @@ df.drop('E',axis=0)
 </table>
 </div>
 
-
-
-** Selecting Rows**
-
+#### Selecting Rows
 
 ```python
 df.loc['A']
 ```
-
-
-
 
     W    2.706850
     X    0.628133
@@ -774,17 +638,11 @@ df.loc['A']
     Z    0.503826
     Name: A, dtype: float64
 
-
-
 Or select based off of position instead of label 
-
 
 ```python
 df.iloc[2]
 ```
-
-
-
 
     W   -2.018168
     X    0.740122
@@ -792,29 +650,17 @@ df.iloc[2]
     Z   -0.589001
     Name: C, dtype: float64
 
-
-
-** Selecting subset of rows and columns **
-
+#### Selecting subset of rows and columns
 
 ```python
 df.loc['B','Y']
 ```
 
-
-
-
     -0.84807698340363147
-
-
-
 
 ```python
 df.loc[['A','B'],['W','Y']]
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -840,19 +686,13 @@ df.loc[['A','B'],['W','Y']]
 </table>
 </div>
 
-
-
 ### Conditional Selection
 
 An important feature of pandas is conditional selection using bracket notation, very similar to numpy:
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -905,15 +745,9 @@ df
 </table>
 </div>
 
-
-
-
 ```python
 df>0
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -966,15 +800,9 @@ df>0
 </table>
 </div>
 
-
-
-
 ```python
 df[df>0]
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1027,15 +855,9 @@ df[df>0]
 </table>
 </div>
 
-
-
-
 ```python
 df[df['W']>0]
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1081,15 +903,9 @@ df[df['W']>0]
 </table>
 </div>
 
-
-
-
 ```python
 df[df['W']>0]['Y']
 ```
-
-
-
 
     A    0.907969
     B   -0.848077
@@ -1097,15 +913,9 @@ df[df['W']>0]['Y']
     E    2.605967
     Name: Y, dtype: float64
 
-
-
-
 ```python
 df[df['W']>0][['Y','X']]
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1141,17 +951,11 @@ df[df['W']>0][['Y','X']]
 </table>
 </div>
 
-
-
 For two conditions you can use | and & with parenthesis:
-
 
 ```python
 df[(df['W']>0) & (df['Y'] > 1)]
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1176,19 +980,13 @@ df[(df['W']>0) & (df['Y'] > 1)]
 </table>
 </div>
 
-
-
-## More Index Details
+### More Index Details
 
 Let's discuss some more features of indexing, including resetting the index or setting it something else. We'll also talk about index hierarchy!
-
 
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1241,16 +1039,10 @@ df
 </table>
 </div>
 
-
-
-
 ```python
 # Reset to default 0,1...n index
 df.reset_index()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1309,25 +1101,17 @@ df.reset_index()
 </table>
 </div>
 
-
-
-
 ```python
 newind = 'CA NY WY OR CO'.split()
 ```
-
 
 ```python
 df['States'] = newind
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1385,17 +1169,11 @@ df
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 df.set_index('States')
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -1454,15 +1232,9 @@ df.set_index('States')
 </table>
 </div>
 
-
-
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1521,20 +1293,13 @@ df
 </table>
 </div>
 
-
-
-
 ```python
 df.set_index('States',inplace=True)
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1594,12 +1359,9 @@ df
 </table>
 </div>
 
-
-
-## Multi-Index and Index Hierarchy
+### Multi-Index and Index Hierarchy
 
 Let us go over how to work with Multi-Index, first we'll create a quick example of what a Multi-Indexed DataFrame would look like:
-
 
 ```python
 # Index Levels
@@ -1609,27 +1371,17 @@ hier_index = list(zip(outside,inside))
 hier_index = pd.MultiIndex.from_tuples(hier_index)
 ```
 
-
 ```python
 hier_index
 ```
 
-
-
-
     MultiIndex(levels=[['G1', 'G2'], [1, 2, 3]],
                labels=[[0, 0, 0, 1, 1, 1], [0, 1, 2, 0, 1, 2]])
-
-
-
 
 ```python
 df = pd.DataFrame(np.random.randn(6,2),index=hier_index,columns=['A','B'])
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1678,17 +1430,11 @@ df
 </table>
 </div>
 
-
-
 Now let's show how to index this! For index hierarchy we use df.loc[], if this was on the columns axis, you would just use normal bracket notation df[]. Calling one level of the index returns the sub-dataframe:
-
 
 ```python
 df.loc['G1']
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1719,46 +1465,27 @@ df.loc['G1']
 </table>
 </div>
 
-
-
-
 ```python
 df.loc['G1'].loc[1]
 ```
-
-
-
 
     A    0.153661
     B    0.167638
     Name: 1, dtype: float64
 
-
-
-
 ```python
 df.index.names
 ```
 
-
-
-
     FrozenList([None, None])
-
-
-
 
 ```python
 df.index.names = ['Group','Num']
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1813,15 +1540,9 @@ df
 </table>
 </div>
 
-
-
-
 ```python
 df.xs('G1')
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1857,29 +1578,17 @@ df.xs('G1')
 </table>
 </div>
 
-
-
-
 ```python
 df.xs(['G1',1])
 ```
-
-
-
 
     A    0.153661
     B    0.167638
     Name: (G1, 1), dtype: float64
 
-
-
-
 ```python
 df.xs(1,level='Num')
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1910,25 +1619,14 @@ df.xs(1,level='Num')
 </table>
 </div>
 
-
-
-# Great Job!
-
-___
-
-<a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a>
-___
-
-# Missing Data
+### Missing Data
 
 Let's show a few convenient methods to deal with Missing Data in pandas:
-
 
 ```python
 import numpy as np
 import pandas as pd
 ```
-
 
 ```python
 df = pd.DataFrame({'A':[1,2,np.nan],
@@ -1936,13 +1634,9 @@ df = pd.DataFrame({'A':[1,2,np.nan],
                   'C':[1,2,3]})
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1976,17 +1670,11 @@ df
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 df.dropna()
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -2008,15 +1696,9 @@ df.dropna()
 </table>
 </div>
 
-
-
-
 ```python
 df.dropna(axis=1)
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2043,15 +1725,9 @@ df.dropna(axis=1)
 </table>
 </div>
 
-
-
-
 ```python
 df.dropna(thresh=2)
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2080,15 +1756,9 @@ df.dropna(thresh=2)
 </table>
 </div>
 
-
-
-
 ```python
 df.fillna(value='FILL VALUE')
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2123,34 +1793,18 @@ df.fillna(value='FILL VALUE')
 </table>
 </div>
 
-
-
-
 ```python
 df['A'].fillna(value=df['A'].mean())
 ```
-
-
-
 
     0    1.0
     1    2.0
     2    1.5
     Name: A, dtype: float64
 
-
-
-# Great Job!
-
-___
-
-<a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a>
-___
-
-# Groupby
+### Groupby
 
 The groupby method allows you to group rows of data together and call aggregate functions
-
 
 ```python
 import pandas as pd
@@ -2160,18 +1814,13 @@ data = {'Company':['GOOG','GOOG','MSFT','MSFT','FB','FB'],
        'Sales':[200,120,340,124,243,350]}
 ```
 
-
 ```python
 df = pd.DataFrame(data)
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2224,24 +1873,13 @@ df
 </table>
 </div>
 
-
-
-** Now you can use the .groupby() method to group rows together based off of a column name. For instance let's group based off of Company. This will create a DataFrameGroupBy object:**
-
+Now you can use the .groupby() method to group rows together based off of a column name. For instance let's group based off of Company. This will create a DataFrameGroupBy object:
 
 ```python
 df.groupby('Company')
 ```
 
-
-
-
-    <pandas.core.groupby.DataFrameGroupBy object at 0x113014128>
-
-
-
 You can save this object as a new variable:
-
 
 ```python
 by_comp = df.groupby("Company")
@@ -2249,13 +1887,9 @@ by_comp = df.groupby("Company")
 
 And then call aggregate methods off the object:
 
-
 ```python
 by_comp.mean()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2285,17 +1919,11 @@ by_comp.mean()
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 df.groupby('Company').mean()
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -2325,17 +1953,11 @@ df.groupby('Company').mean()
 </table>
 </div>
 
-
-
 More examples of aggregate methods:
-
 
 ```python
 by_comp.std()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2366,15 +1988,9 @@ by_comp.std()
 </table>
 </div>
 
-
-
-
 ```python
 by_comp.min()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2410,15 +2026,9 @@ by_comp.min()
 </table>
 </div>
 
-
-
-
 ```python
 by_comp.max()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2454,15 +2064,9 @@ by_comp.max()
 </table>
 </div>
 
-
-
-
 ```python
 by_comp.count()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2498,15 +2102,9 @@ by_comp.count()
 </table>
 </div>
 
-
-
-
 ```python
 by_comp.describe()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2626,15 +2224,9 @@ by_comp.describe()
 </table>
 </div>
 
-
-
-
 ```python
 by_comp.describe().transpose()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2700,15 +2292,9 @@ by_comp.describe().transpose()
 <p>1 rows × 24 columns</p>
 </div>
 
-
-
-
 ```python
 by_comp.describe().transpose()['GOOG']
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2741,28 +2327,15 @@ by_comp.describe().transpose()['GOOG']
 </table>
 </div>
 
-
-
-# Great Job!
-
-___
-
-<a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a>
-___
-
-# Merging, Joining, and Concatenating
+### Merging, Joining, and Concatenating
 
 There are 3 main ways of combining DataFrames together: Merging, Joining and Concatenating. In this lecture we will discuss these 3 methods with examples.
 
-____
-
-### Example DataFrames
-
+#### Example DataFrames
 
 ```python
 import pandas as pd
 ```
-
 
 ```python
 df1 = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'],
@@ -2772,7 +2345,6 @@ df1 = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'],
                         index=[0, 1, 2, 3])
 ```
 
-
 ```python
 df2 = pd.DataFrame({'A': ['A4', 'A5', 'A6', 'A7'],
                         'B': ['B4', 'B5', 'B6', 'B7'],
@@ -2780,7 +2352,6 @@ df2 = pd.DataFrame({'A': ['A4', 'A5', 'A6', 'A7'],
                         'D': ['D4', 'D5', 'D6', 'D7']},
                          index=[4, 5, 6, 7]) 
 ```
-
 
 ```python
 df3 = pd.DataFrame({'A': ['A8', 'A9', 'A10', 'A11'],
@@ -2790,13 +2361,9 @@ df3 = pd.DataFrame({'A': ['A8', 'A9', 'A10', 'A11'],
                         index=[8, 9, 10, 11])
 ```
 
-
 ```python
 df1
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -2841,17 +2408,11 @@ df1
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 df2
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -2895,17 +2456,11 @@ df2
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 df3
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -2950,20 +2505,14 @@ df3
 </table>
 </div>
 
-
-
-## Concatenation
+### Concatenation
 
 Concatenation basically glues together DataFrames. Keep in mind that dimensions should match along the axis you are concatenating on. You can use **pd.concat** and pass in a list of DataFrames to concatenate together:
-
 
 ```python
 pd.concat([df1,df2,df3])
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -3063,17 +2612,11 @@ pd.concat([df1,df2,df3])
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 pd.concat([df1,df2,df3],axis=1)
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -3278,11 +2821,7 @@ pd.concat([df1,df2,df3],axis=1)
 </table>
 </div>
 
-
-
-_____
-## Example DataFrames
-
+#### Example DataFrames
 
 ```python
 left = pd.DataFrame({'key': ['K0', 'K1', 'K2', 'K3'],
@@ -3294,13 +2833,9 @@ right = pd.DataFrame({'key': ['K0', 'K1', 'K2', 'K3'],
                           'D': ['D0', 'D1', 'D2', 'D3']})    
 ```
 
-
 ```python
 left
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3340,17 +2875,11 @@ left
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 right
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -3390,21 +2919,13 @@ right
 </table>
 </div>
 
-
-
-___
-
-## Merging
+### Merging
 
 The **merge** function allows you to merge DataFrames together using a similar logic as merging SQL Tables together. For example:
-
 
 ```python
 pd.merge(left,right,how='inner',on='key')
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3455,10 +2976,7 @@ pd.merge(left,right,how='inner',on='key')
 </table>
 </div>
 
-
-
 Or to show a more complicated example:
-
 
 ```python
 left = pd.DataFrame({'key1': ['K0', 'K0', 'K1', 'K2'],
@@ -3472,13 +2990,9 @@ right = pd.DataFrame({'key1': ['K0', 'K1', 'K1', 'K2'],
                                   'D': ['D0', 'D1', 'D2', 'D3']})
 ```
 
-
 ```python
 pd.merge(left, right, on=['key1', 'key2'])
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3525,15 +3039,9 @@ pd.merge(left, right, on=['key1', 'key2'])
 </table>
 </div>
 
-
-
-
 ```python
 pd.merge(left, right, how='outer', on=['key1', 'key2'])
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3607,15 +3115,9 @@ pd.merge(left, right, how='outer', on=['key1', 'key2'])
 </table>
 </div>
 
-
-
-
 ```python
 pd.merge(left, right, how='right', on=['key1', 'key2'])
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3671,15 +3173,9 @@ pd.merge(left, right, how='right', on=['key1', 'key2'])
 </table>
 </div>
 
-
-
-
 ```python
 pd.merge(left, right, how='left', on=['key1', 'key2'])
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3744,11 +3240,8 @@ pd.merge(left, right, how='left', on=['key1', 'key2'])
 </table>
 </div>
 
-
-
-## Joining
+### Joining
 Joining is a convenient method for combining the columns of two potentially differently-indexed DataFrames into a single result DataFrame.
-
 
 ```python
 left = pd.DataFrame({'A': ['A0', 'A1', 'A2'],
@@ -3760,13 +3253,9 @@ right = pd.DataFrame({'C': ['C0', 'C2', 'C3'],
                       index=['K0', 'K2', 'K3'])
 ```
 
-
 ```python
 left.join(right)
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3805,15 +3294,9 @@ left.join(right)
 </table>
 </div>
 
-
-
-
 ```python
 left.join(right, how='outer')
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3859,28 +3342,15 @@ left.join(right, how='outer')
 </table>
 </div>
 
-
-
-# Great Job!
-
-___
-
-<a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a>
-___
-
-# Operations
+## Operations
 
 There are lots of operations with pandas that will be really useful to you, but don't fall into any distinct category. Let's show them here in this lecture:
-
 
 ```python
 import pandas as pd
 df = pd.DataFrame({'col1':[1,2,3,4],'col2':[444,555,666,444],'col3':['abc','def','ghi','xyz']})
 df.head()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -3921,64 +3391,39 @@ df.head()
 </table>
 </div>
 
-
-
 ### Info on Unique Values
-
 
 ```python
 df['col2'].unique()
 ```
 
-
-
-
     array([444, 555, 666])
-
-
-
 
 ```python
 df['col2'].nunique()
 ```
 
-
-
-
     3
-
-
-
 
 ```python
 df['col2'].value_counts()
 ```
-
-
-
 
     444    2
     555    1
     666    1
     Name: col2, dtype: int64
 
-
-
 ### Selecting Data
-
 
 ```python
 #Select from DataFrame using criteria from multiple columns
 newdf = df[(df['col1']>2) & (df['col2']==444)]
 ```
 
-
 ```python
 newdf
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4001,23 +3446,16 @@ newdf
 </table>
 </div>
 
-
-
 ### Applying Functions
-
 
 ```python
 def times2(x):
     return x*2
 ```
 
-
 ```python
 df['col1'].apply(times2)
 ```
-
-
-
 
     0    2
     1    4
@@ -4025,15 +3463,9 @@ df['col1'].apply(times2)
     3    8
     Name: col1, dtype: int64
 
-
-
-
 ```python
 df['col3'].apply(len)
 ```
-
-
-
 
     0    3
     1    3
@@ -4041,34 +3473,21 @@ df['col3'].apply(len)
     3    3
     Name: col3, dtype: int64
 
-
-
-
 ```python
 df['col1'].sum()
 ```
 
-
-
-
     10
 
-
-
-** Permanently Removing a Column**
-
+### Permanently Removing a Column
 
 ```python
 del df['col1']
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4104,44 +3523,26 @@ df
 </table>
 </div>
 
-
-
-** Get column and index names: **
-
+### Get column and index names
 
 ```python
 df.columns
 ```
 
-
-
-
     Index(['col2', 'col3'], dtype='object')
-
-
-
 
 ```python
 df.index
 ```
 
-
-
-
     RangeIndex(start=0, stop=4, step=1)
 
-
-
-** Sorting and Ordering a DataFrame:**
-
+### Sorting and Ordering a DataFrame
 
 ```python
 df
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -4175,17 +3576,11 @@ df
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 df.sort_values(by='col2') #inplace=False by default
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -4220,17 +3615,11 @@ df.sort_values(by='col2') #inplace=False by default
 </table>
 </div>
 
-
-
-** Find Null Values or Check for Null Values**
-
+### Find Null Values or Check for Null Values
 
 ```python
 df.isnull()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4265,18 +3654,12 @@ df.isnull()
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 # Drop rows with NaN Values
 df.dropna()
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -4311,15 +3694,11 @@ df.dropna()
 </table>
 </div>
 
-
-
-** Filling in NaN values with something else: **
-
+### Filling in NaN values with something else
 
 ```python
 import numpy as np
 ```
-
 
 ```python
 df = pd.DataFrame({'col1':[1,2,3,np.nan],
@@ -4327,9 +3706,6 @@ df = pd.DataFrame({'col1':[1,2,3,np.nan],
                    'col3':['abc','def','ghi','xyz']})
 df.head()
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4370,15 +3746,9 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 df.fillna('FILL')
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4419,9 +3789,6 @@ df.fillna('FILL')
 </table>
 </div>
 
-
-
-
 ```python
 data = {'A':['foo','foo','foo','bar','bar','bar'],
      'B':['one','one','two','two','one','one'],
@@ -4431,13 +3798,9 @@ data = {'A':['foo','foo','foo','bar','bar','bar'],
 df = pd.DataFrame(data)
 ```
 
-
 ```python
 df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4497,15 +3860,9 @@ df
 </table>
 </div>
 
-
-
-
 ```python
 df.pivot_table(values='D',index=['A', 'B'],columns=['C'])
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4550,38 +3907,15 @@ df.pivot_table(values='D',index=['A', 'B'],columns=['C'])
 </table>
 </div>
 
-
-
-# Great Job!
-
-___
-
-<a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a>
-___
-
-# Data Input and Output
-
-This notebook is the reference code for getting input and output, pandas can read a variety of file types using its pd.read_ methods. Let's take a look at the most common data types:
-
-
-```python
-import numpy as np
-import pandas as pd
-```
-
-## CSV
+## CSV Data
 
 ### CSV Input
-
 
 ```python
 df = pd.read_csv('example')
 df
 ```
 
-
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -4626,27 +3960,21 @@ df
 </table>
 </div>
 
-
-
 ### CSV Output
-
 
 ```python
 df.to_csv('example',index=False)
 ```
 
-## Excel
+## Excel Data
+
 Pandas can read and write excel files, keep in mind, this only imports data. Not formulas or images, having images or macros may cause this read_excel method to crash. 
 
 ### Excel Input
 
-
 ```python
 pd.read_excel('Excel_Sample.xlsx',sheetname='Sheet1')
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -4692,16 +4020,13 @@ pd.read_excel('Excel_Sample.xlsx',sheetname='Sheet1')
 </table>
 </div>
 
-
-
 ### Excel Output
-
 
 ```python
 df.to_excel('Excel_Sample.xlsx',sheet_name='Sheet1')
 ```
 
-## HTML
+## HTML Data
 
 You may need to install htmllib5,lxml, and BeautifulSoup4. In your terminal/command prompt run:
 
@@ -4718,18 +4043,13 @@ Pandas can read table tabs off of html. For example:
 
 Pandas read_html function will read tables off of a webpage and return a list of DataFrame objects:
 
-
 ```python
 df = pd.read_html('http://www.fdic.gov/bank/individual/failed/banklist.html')
 ```
 
-
 ```python
 df[0]
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -5547,18 +4867,11 @@ df[0]
 <p>545 rows × 10 columns</p>
 </div>
 
-
-
-____
-
-_____
-_____
-# SQL (Optional)
+# SQL Data
 
 * Note: If you are completely unfamiliar with SQL you can check out my other course: "Complete SQL Bootcamp" to learn SQL.
 
 The pandas.io.sql module provides a collection of query wrappers to both facilitate data retrieval and to reduce dependency on DB-specific API. Database abstraction is provided by SQLAlchemy if installed. In addition you will need a driver library for your database. Examples of such drivers are psycopg2 for PostgreSQL or pymysql for MySQL. For SQLite this is included in Python’s standard library by default. You can find an overview of supported drivers for each SQL dialect in the SQLAlchemy docs.
-
 
 If SQLAlchemy is not installed, a fallback is only provided for sqlite (and for mysql for backwards compatibility, but this is deprecated and will be removed in a future version). This mode requires a Python database adapter which respect the Python DB-API.
 
@@ -5575,33 +4888,25 @@ The key functions are:
 * DataFrame.to_sql(name, con[, flavor, ...])	
     * Write records stored in a DataFrame to a SQL database.
 
-
 ```python
 from sqlalchemy import create_engine
 ```
-
 
 ```python
 engine = create_engine('sqlite:///:memory:')
 ```
 
-
 ```python
 df.to_sql('data', engine)
 ```
-
 
 ```python
 sql_df = pd.read_sql('data',con=engine)
 ```
 
-
 ```python
 sql_df
 ```
-
-
-
 
 <div>
 <table border="1" class="dataframe">
@@ -5651,7 +4956,3 @@ sql_df
   </tbody>
 </table>
 </div>
-
-
-
-# Great Job!

@@ -24,76 +24,49 @@ We will only learn the basics of NumPy, to get started we need to install it!
 
 Once you've installed NumPy you can import it as a library:
 
-
 ```python
 import numpy as np
 ```
 
 Numpy has many built-in functions and capabilities. We won't cover them all but instead we will focus on some of the most important aspects of Numpy: vectors,arrays,matrices, and number generation. Let's start by discussing arrays.
 
-# Numpy Arrays
+## Numpy Arrays
 
 NumPy arrays are the main way we will use Numpy throughout the course. Numpy arrays essentially come in two flavors: vectors and matrices. Vectors are strictly 1-d arrays and matrices are 2-d (but you should note a matrix can still have only one row or one column).
 
 Let's begin our introduction by exploring how to create NumPy arrays.
 
-## Creating NumPy Arrays
-
 ### From a Python List
 
 We can create an array by directly converting a list or list of lists:
-
 
 ```python
 my_list = [1,2,3]
 my_list
 ```
 
-
-
-
     [1, 2, 3]
-
-
-
 
 ```python
 np.array(my_list)
 ```
 
-
-
-
     array([1, 2, 3])
-
-
-
 
 ```python
 my_matrix = [[1,2,3],[4,5,6],[7,8,9]]
 my_matrix
 ```
 
-
-
-
     [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-
-
-
 
 ```python
 np.array(my_matrix)
 ```
 
-
-
-
     array([[1, 2, 3],
            [4, 5, 6],
            [7, 8, 9]])
-
-
 
 ## Built-in Methods
 
@@ -103,53 +76,31 @@ There are lots of built-in ways to generate Arrays
 
 Return evenly spaced values within a given interval.
 
-
 ```python
 np.arange(0,10)
 ```
 
-
-
-
     array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-
-
 
 ```python
 np.arange(0,11,2)
 ```
 
-
-
-
     array([ 0,  2,  4,  6,  8, 10])
-
-
 
 ### zeros and ones
 
 Generate arrays of zeros or ones
 
-
 ```python
 np.zeros(3)
 ```
 
-
-
-
     array([0., 0., 0.])
-
-
-
 
 ```python
 np.zeros((5,5))
 ```
-
-
-
 
     array([[0., 0., 0., 0., 0.],
            [0., 0., 0., 0., 0.],
@@ -157,56 +108,33 @@ np.zeros((5,5))
            [0., 0., 0., 0., 0.],
            [0., 0., 0., 0., 0.]])
 
-
-
-
 ```python
 np.ones(3)
 ```
 
-
-
-
     array([1., 1., 1.])
-
-
-
 
 ```python
 np.ones((3,3))
 ```
 
-
-
-
     array([[1., 1., 1.],
            [1., 1., 1.],
            [1., 1., 1.]])
 
-
-
 ### linspace
-Return evenly spaced numbers over a specified interval.
 
+Return evenly spaced numbers over a specified interval.
 
 ```python
 np.linspace(0,10,3)
 ```
 
-
-
-
     array([ 0.,  5., 10.])
-
-
-
 
 ```python
 np.linspace(0,10,50)
 ```
-
-
-
 
     array([ 0.        ,  0.20408163,  0.40816327,  0.6122449 ,  0.81632653,
             1.02040816,  1.2244898 ,  1.42857143,  1.63265306,  1.83673469,
@@ -219,55 +147,36 @@ np.linspace(0,10,50)
             8.16326531,  8.36734694,  8.57142857,  8.7755102 ,  8.97959184,
             9.18367347,  9.3877551 ,  9.59183673,  9.79591837, 10.        ])
 
-
-
-## eye
+### eye
 
 Creates an identity matrix
-
 
 ```python
 np.eye(4)
 ```
-
-
-
 
     array([[1., 0., 0., 0.],
            [0., 1., 0., 0.],
            [0., 0., 1., 0.],
            [0., 0., 0., 1.]])
 
-
-
 ## Random 
 
 Numpy also has lots of ways to create random number arrays:
 
 ### rand
-Create an array of the given shape and populate it with
-random samples from a uniform distribution
-over ``[0, 1)``.
 
+Create an array of the given shape and populate it with random samples from a uniform distribution over ``[0, 1)``.
 
 ```python
 np.random.rand(2)
 ```
 
-
-
-
     array([0.48986762, 0.01468397])
-
-
-
 
 ```python
 np.random.rand(5,5)
 ```
-
-
-
 
     array([[0.49717583, 0.85567488, 0.94414447, 0.66025653, 0.85163724],
            [0.32891759, 0.74810469, 0.16001041, 0.77051371, 0.88918009],
@@ -275,31 +184,19 @@ np.random.rand(5,5)
            [0.06457888, 0.14487206, 0.72442204, 0.62528167, 0.73544863],
            [0.38535387, 0.7203514 , 0.34161177, 0.99193526, 0.79151416]])
 
-
-
 ### randn
 
 Return a sample (or samples) from the "standard normal" distribution. Unlike rand which is uniform:
-
 
 ```python
 np.random.randn(2)
 ```
 
-
-
-
     array([-1.31222401,  1.20662849])
-
-
-
 
 ```python
 np.random.randn(5,5)
 ```
-
-
-
 
     array([[ 0.05155323, -2.03255688,  1.09044905,  1.37866648, -0.43513118],
            [-0.113966  ,  0.06371491, -0.58679889,  0.32057308, -1.90984774],
@@ -307,80 +204,51 @@ np.random.randn(5,5)
            [ 1.31027626,  0.15909068,  0.85816313, -0.91927387,  1.13879634],
            [-0.18915251, -0.48102558,  0.38557437,  1.03093896,  2.00252213]])
 
-
-
 ### randint
-Return random integers from `low` (inclusive) to `high` (exclusive).
 
+Return random integers from `low` (inclusive) to `high` (exclusive).
 
 ```python
 np.random.randint(1,100)
 ```
 
-
-
-
     42
-
-
-
 
 ```python
 np.random.randint(1,100,10)
 ```
 
-
-
-
     array([73, 70, 12, 99, 69, 26, 10, 41, 92,  6])
-
-
 
 ## Array Attributes and Methods
 
 Let's discuss some useful attributes and methods or an array:
-
 
 ```python
 arr = np.arange(25)
 ranarr = np.random.randint(0,50,10)
 ```
 
-
 ```python
 arr
 ```
 
-
-
-
     array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
            17, 18, 19, 20, 21, 22, 23, 24])
-
-
-
 
 ```python
 ranarr
 ```
 
-
-
-
     array([29, 42, 21, 45, 11, 47, 46, 43, 25, 19])
 
+### Reshape
 
-
-## Reshape
 Returns an array containing the same data with a new shape.
-
 
 ```python
 arr.reshape(5,5)
 ```
-
-
-
 
     array([[ 0,  1,  2,  3,  4],
            [ 5,  6,  7,  8,  9],
@@ -388,122 +256,68 @@ arr.reshape(5,5)
            [15, 16, 17, 18, 19],
            [20, 21, 22, 23, 24]])
 
-
-
 ### max,min,argmax,argmin
 
 These are useful methods for finding max or min values. Or to find their index locations using argmin or argmax
-
 
 ```python
 ranarr
 ```
 
-
-
-
     array([29, 42, 21, 45, 11, 47, 46, 43, 25, 19])
-
-
-
 
 ```python
 ranarr.max()
 ```
 
-
-
-
     47
-
-
-
 
 ```python
 ranarr.argmax()
 ```
 
-
-
-
     5
-
-
-
 
 ```python
 ranarr.min()
 ```
 
-
-
-
     11
-
-
-
 
 ```python
 ranarr.argmin()
 ```
 
-
-
-
     4
 
-
-
-## Shape
+### Shape
 
 Shape is an attribute that arrays have (not a method):
-
 
 ```python
 # Vector
 arr.shape
 ```
 
-
-
-
     (25,)
-
-
-
 
 ```python
 # Notice the two sets of brackets
 arr.reshape(1,25)
 ```
 
-
-
-
     array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15,
             16, 17, 18, 19, 20, 21, 22, 23, 24]])
-
-
-
 
 ```python
 arr.reshape(1,25).shape
 ```
 
-
-
-
     (1, 25)
-
-
-
 
 ```python
 arr.reshape(25,1)
 ```
-
-
-
 
     array([[ 0],
            [ 1],
@@ -531,110 +345,70 @@ arr.reshape(25,1)
            [23],
            [24]])
 
-
-
-
 ```python
 arr.reshape(25,1).shape
 ```
 
-
-
-
     (25, 1)
-
-
 
 ### dtype
 
 You can also grab the data type of the object in the array:
 
-
 ```python
 arr.dtype
 ```
 
-
-
-
     dtype('int64')
 
+## NumPy Indexing and Selection
 
-
-# NumPy Indexing and Selection
-
-In this lecture we will discuss how to select elements or groups of elements from an array.
-
+In this section we will discuss how to select elements or groups of elements from an array.
 
 ```python
 import numpy as np
 ```
-
 
 ```python
 #Creating sample array
 arr = np.arange(0,11)
 ```
 
-
 ```python
 #Show
 arr
 ```
 
-
-
-
     array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
 
+### Bracket Indexing and Selection
 
-
-## Bracket Indexing and Selection
 The simplest way to pick one or some elements of an array looks very similar to python lists:
-
 
 ```python
 #Get a value at an index
 arr[8]
 ```
 
-
-
-
     8
-
-
-
 
 ```python
 #Get values in a range
 arr[1:5]
 ```
 
-
-
-
     array([1, 2, 3, 4])
-
-
-
 
 ```python
 #Get values in a range
 arr[0:5]
 ```
 
-
-
-
     array([0, 1, 2, 3, 4])
 
-
-
-## Broadcasting
+### Broadcasting
 
 Numpy arrays differ from a normal Python list because of their ability to broadcast:
-
 
 ```python
 #Setting a value with index range (Broadcasting)
@@ -644,13 +418,7 @@ arr[0:5]=100
 arr
 ```
 
-
-
-
     array([100, 100, 100, 100, 100,   5,   6,   7,   8,   9,  10])
-
-
-
 
 ```python
 # Reset array, we'll see why I had to reset in  a moment
@@ -660,13 +428,7 @@ arr = np.arange(0,11)
 arr
 ```
 
-
-
-
     array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
-
-
-
 
 ```python
 #Important notes on Slices
@@ -676,13 +438,7 @@ slice_of_arr = arr[0:6]
 slice_of_arr
 ```
 
-
-
-
     array([0, 1, 2, 3, 4, 5])
-
-
-
 
 ```python
 #Change Slice
@@ -692,29 +448,17 @@ slice_of_arr[:]=99
 slice_of_arr
 ```
 
-
-
-
     array([99, 99, 99, 99, 99, 99])
 
-
-
 Now note the changes also occur in our original array!
-
 
 ```python
 arr
 ```
 
-
-
-
     array([99, 99, 99, 99, 99, 99,  6,  7,  8,  9, 10])
 
-
-
 Data is not copied, it's a view of the original array! This avoids memory problems!
-
 
 ```python
 #To get a copy, need to be explicit
@@ -723,17 +467,11 @@ arr_copy = arr.copy()
 arr_copy
 ```
 
-
-
-
     array([99, 99, 99, 99, 99, 99,  6,  7,  8,  9, 10])
 
-
-
-## Indexing a 2D array (matrices)
+### Indexing a 2D array (matrices)
 
 The general format is **arr_2d[row][col]** or **arr_2d[row,col]**. I recommend usually using the comma notation for clarity.
-
 
 ```python
 arr_2d = np.array(([5,10,15],[20,25,30],[35,40,45]))
@@ -742,29 +480,16 @@ arr_2d = np.array(([5,10,15],[20,25,30],[35,40,45]))
 arr_2d
 ```
 
-
-
-
     array([[ 5, 10, 15],
            [20, 25, 30],
            [35, 40, 45]])
-
-
-
 
 ```python
 #Indexing row
 arr_2d[1]
 
 ```
-
-
-
-
     array([20, 25, 30])
-
-
-
 
 ```python
 # Format is arr_2d[row][col] or arr_2d[row,col]
@@ -773,10 +498,7 @@ arr_2d[1]
 arr_2d[1][0]
 ```
 
-
-
-
-    20
+20
 
 
 
