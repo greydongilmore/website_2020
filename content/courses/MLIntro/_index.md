@@ -16,10 +16,10 @@ type: docs  # Do not modify.
 # - name: Declare this menu item as a parent with ID `name`.
 # - weight: Position of link in menu.
 menu:
- MLIntro:
+  MLIntro:
     name: Machine Learning
     weight: 1
-ch_08:
+  ch_08:
 	parent: Machine Learning
     name: Time Series Analysis
     weight: 2
