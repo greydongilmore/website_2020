@@ -62,20 +62,15 @@ class YahooFinanceHistory:
         return pd.read_csv(StringIO(response.text), parse_dates=['Date'])
 ```
 
-
 ```python
 stock = 'AMD'
 
 df = YahooFinanceHistory(stock, days_back=2000).get_quote()
 ```
 
-
 ```python
 df.tail()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -160,8 +155,6 @@ df.tail()
 </div>
 
 
-
-
 ```python
 import matplotlib.pyplot as plt
 from pandas.plotting import register_matplotlib_converters
@@ -180,9 +173,7 @@ plt.xlabel('Days', fontweight='bold');
 plt.ylabel('Price (USD)', fontweight='bold');
 ```
 
-
 ![png](./img/01_timeseries_analysis_4_0.png)
-
 
 You can see that the trend is highly non-linear and it is very difficult to capture the trend using this information. This is where the power of **Long Short-Term Memory network** (LSTM) can be utilized. LSTM is a type of recurrent neural network capable of remembering the past information and while predicting the future values, it takes this past information into account.
 
@@ -286,12 +277,6 @@ model.compile(optimizer = 'adam', loss = 'mean_squared_error')
 model.fit(x_train, y_train, epochs = 100, batch_size = 32,verbose=0);
 ```
 
-    WARNING:tensorflow:From C:\Users\Greydon\Anaconda3\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-    Instructions for updating:
-    If using Keras pass *_constraint arguments to layers.
-    WARNING:tensorflow:From C:\Users\Greydon\Anaconda3\lib\site-packages\keras\backend\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
-    
-
 
 ## Testing our LSTM
 
@@ -326,7 +311,6 @@ closing_price = scaler.inverse_transform(closing_price)
 ## How Did We Do?
 
 
-
 ```python
 # Split data into test and train sets
 data_idx = len(new_data) - len(closing_price)
@@ -346,9 +330,7 @@ plt.ylabel('Price (USD)', fontweight='bold')
 plt.legend(plt2, ('Actual', 'Prediction'), loc='center left', bbox_to_anchor=(1, 0.5));
 ```
 
-
 ![png](./img/01_timeseries_analysis_15_0.png)
-
 
 
 ```python
@@ -376,48 +358,5 @@ plt.plot(trade_dataset['Cumulative Strategy Returns'], color='g', label='Strateg
 plt.legend()
 plt.show()
 ```
-
-    C:\Users\Greydon\Anaconda3\lib\site-packages\ipykernel_launcher.py:12: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      if sys.path[0] == '':
-    C:\Users\Greydon\Anaconda3\lib\site-packages\ipykernel_launcher.py:13: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      del sys.path[0]
-    C:\Users\Greydon\Anaconda3\lib\site-packages\ipykernel_launcher.py:14: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      
-    C:\Users\Greydon\Anaconda3\lib\site-packages\ipykernel_launcher.py:15: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      from ipykernel import kernelapp as app
-    C:\Users\Greydon\Anaconda3\lib\site-packages\ipykernel_launcher.py:16: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      app.launch_new_instance()
-    C:\Users\Greydon\Anaconda3\lib\site-packages\ipykernel_launcher.py:17: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-    C:\Users\Greydon\Anaconda3\lib\site-packages\ipykernel_launcher.py:18: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-
-
 
 ![png](./img/01_timeseries_analysis_16_1.png)
