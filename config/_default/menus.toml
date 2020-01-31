@@ -37,7 +37,7 @@
 [[main]]
   name = "Machine Learning"
   parent = "courses_main"
-  url = "courses/MLIntro"
+  url = "courses/ml_intro"
 
 [[main]]
   name = "Training"
