@@ -1,6 +1,6 @@
 ---
-title: Introduction
-linktitle: Introduction
+title: Plotting Intro
+linktitle: Plotting Intro
 toc: true
 type: docs
 date: "2019-05-05T00:00:00+01:00"
