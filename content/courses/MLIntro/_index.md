@@ -1,6 +1,6 @@
 ---
 # Course title, summary, and position.
-linktitle: Phys 2130
+linktitle: Machine Learning
 summary: Tutorial page for slides and midterm/exam review material.
 weight: 1
 
@@ -19,7 +19,8 @@ menu:
  MLIntro:
     name: Machine Learning
     weight: 1
- ch_08:
+ch_08:
+	parent: Machine Learning
     name: Time Series Analysis
     weight: 2
 ---

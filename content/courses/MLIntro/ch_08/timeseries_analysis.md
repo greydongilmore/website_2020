@@ -6,8 +6,8 @@ type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false
 menu:
-  MLIntro:
-    parent: Time Series Analysis
+  ch_08:
+    name: Time Series Analysis
     weight: 1
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)

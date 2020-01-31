@@ -35,6 +35,11 @@
   url = "courses/phys2130"
 
 [[main]]
+  name = "Machine Learning"
+  parent = "courses_main"
+  url = "courses/MLIntro"
+
+[[main]]
   name = "Training"
   url = "#training"
   weight = 60
