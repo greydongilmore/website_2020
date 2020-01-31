@@ -19,10 +19,6 @@ menu:
   MLIntro:
     name: Machine Learning
     weight: 1
-  ch_08:
-	parent: Machine Learning
-    name: Time Series Analysis
-    weight: 2
 ---
 
 # Introduction
