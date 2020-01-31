@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   MLIntro:
-    name: Machine Learning
+    name: 1. Machine Learning
     weight: 1
 ---
 

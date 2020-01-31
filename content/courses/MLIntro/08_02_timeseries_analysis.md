@@ -7,7 +7,7 @@ date: "2019-05-05T00:00:00+01:00"
 draft: false
 menu:
   MLIntro:
-    parent: Time Series Analysis
+    parent: 8. Time Series Analysis
     weight: 2
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
@@ -173,7 +173,7 @@ plt.xlabel('Days', fontweight='bold');
 plt.ylabel('Price (USD)', fontweight='bold');
 ```
 
-![png](img/01_timeseries_analysis_4_0.png)
+![png](../img/01_timeseries_analysis_4_0.png)
 
 You can see that the trend is highly non-linear and it is very difficult to capture the trend using this information. This is where the power of **Long Short-Term Memory network** (LSTM) can be utilized. LSTM is a type of recurrent neural network capable of remembering the past information and while predicting the future values, it takes this past information into account.
 
@@ -330,7 +330,7 @@ plt.ylabel('Price (USD)', fontweight='bold')
 plt.legend(plt2, ('Actual', 'Prediction'), loc='center left', bbox_to_anchor=(1, 0.5));
 ```
 
-![png](img/01_timeseries_analysis_15_0.png)
+![png](../img/01_timeseries_analysis_15_0.png)
 
 
 ```python
