@@ -359,4 +359,4 @@ plt.legend()
 plt.show()
 ```
 
-![png](img/01_timeseries_analysis_16_1.png)
+![png](../img/01_timeseries_analysis_16_1.png)
