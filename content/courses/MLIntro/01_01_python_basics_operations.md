@@ -14,8 +14,6 @@ menu:
 weight: 1
 ---
 
-## Operations in Python
-
 The following are simple operations you can perform within python. We start with very basic operations and work up to more complex operations such as defining functions and methods
 
 | Symbol | Task Performed |

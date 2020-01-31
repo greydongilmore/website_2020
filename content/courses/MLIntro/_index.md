@@ -1,6 +1,6 @@
 ---
 # Course title, summary, and position.
-linktitle: Introduction To Machine Learning
+linktitle: Introduction
 summary: Tutorial page for slides and midterm/exam review material.
 weight: 1
 
@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   MLIntro:
-    name: Introduction To Machine Learning
+    name: Introduction
     weight: 1
 ---
 
