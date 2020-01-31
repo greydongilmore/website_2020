@@ -27,6 +27,12 @@
   name = "Courses"
   url = "courses/"
   weight = 50
+  identifier = "courses_main"
+
+[[main]]
+  name = "Phys 2130"
+  parent = "courses_main"
+  url = "courses/phys2130"
 
 [[main]]
   name = "Training"
