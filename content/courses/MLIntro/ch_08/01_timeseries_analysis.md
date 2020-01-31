@@ -8,10 +8,10 @@ draft: false
 menu:
   ch_08:
     parent: Time Series Analysis
-    weight: 2
+    weight: 1
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 2
+weight: 1
 ---
 
 # Scraping Dataset 

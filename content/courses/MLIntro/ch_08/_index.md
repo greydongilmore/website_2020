@@ -1,17 +1,24 @@
 ---
-title: Introduction
-linktitle: Introduction
-toc: true
-type: docs
-date: "2019-05-05T00:00:00+01:00"
-draft: false
+# Course title, summary, and position.
+linktitle: Time Series Analysis
+summary: Tutorial page for slides and midterm/exam review material.
+weight: 1
+
+# Page metadata.
+title: Time Series Analysis
+date: "2018-09-09T00:00:00Z"
+lastmod: "2018-09-09T00:00:00Z"
+draft: false  # Is this a draft? true/false
+toc: true  # Show table of contents? true/false
+type: docs  # Do not modify.
+
+# Add menu entry to sidebar.
+# - name: Declare this menu item as a parent with ID `name`.
+# - weight: Position of link in menu.
 menu:
   ch_08:
-    parent: Time Series Analysis
+    name: Time Series Analysis
     weight: 1
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
 ---
 
 # Time Series Analysis
