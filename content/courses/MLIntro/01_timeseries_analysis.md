@@ -14,7 +14,7 @@ menu:
 weight: 2
 ---
 
-# Scraping Dataset 
+## Scraping Dataset 
 
 The data that we are going to use for this article will be downloaded from Yahoo Finance. For training our algorithm, we will be using the Apple stock prices for the past 5 years. To perform this task we will first define a function that will work to scrape the Yahoo finance website.
 

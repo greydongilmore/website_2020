@@ -9,7 +9,7 @@ title: Machine Learning
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
-toc: true  # Show table of contents? true/false
+toc: false  # Show table of contents? true/false
 type: docs  # Do not modify.
 
 # Add menu entry to sidebar.
@@ -21,7 +21,7 @@ menu:
     weight: 1
 ---
 
-# Introduction
+## Introduction
 
 This is an introductory tutorial on machine learning using the scikit-learn and Keras Python packages. Prerequisites are minimal; chiefly, I assume that the reader has a little bit of prior programming experience—preferably in Python. A passing familiarity with basic inferential statistical methods (primarily linear regression) is also helpful, but isn't essential. Some of the material in thi tutorial is borrowed from Jake Vanderplas's excellent <a href="https://github.com/jakevdp/sklearn_tutorial" target="_blank">scikit-learn tutorial</a>. The main differences between the present tutorial and most others out there are that (a) this tutorial is more verbose than most (i.e., the emphasis is on conceptual understanding rather than just on learning the scikit-learn API), and (b) most of the examples are drawn from more unique datasets and contain application to real world examples.
 
