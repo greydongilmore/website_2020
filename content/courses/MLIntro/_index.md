@@ -1,11 +1,11 @@
 ---
 # Course title, summary, and position.
-linktitle: Machine Learning
+linktitle: Introduction To Machine Learning
 summary: Tutorial page for slides and midterm/exam review material.
 weight: 1
 
 # Page metadata.
-title: Machine Learning
+title: Introduction To Machine Learning
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -17,11 +17,9 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   MLIntro:
-    name: 1. Machine Learning
+    name: Introduction To Machine Learning
     weight: 1
 ---
-
-## Introduction
 
 This is an introductory tutorial on machine learning using the scikit-learn and Keras Python packages. Prerequisites are minimal; chiefly, I assume that the reader has a little bit of prior programming experience—preferably in Python. A passing familiarity with basic inferential statistical methods (primarily linear regression) is also helpful, but isn't essential. Some of the material in thi tutorial is borrowed from Jake Vanderplas's excellent <a href="https://github.com/jakevdp/sklearn_tutorial" target="_blank">scikit-learn tutorial</a>. The main differences between the present tutorial and most others out there are that (a) this tutorial is more verbose than most (i.e., the emphasis is on conceptual understanding rather than just on learning the scikit-learn API), and (b) most of the examples are drawn from more unique datasets and contain application to real world examples.
 
