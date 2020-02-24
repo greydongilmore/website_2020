@@ -28,6 +28,8 @@ menu:
 * Tutorial #13 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_13_jan_14_2020_with_answers.pdf" target="_blank" rel="noopener">PDF</a> <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_13_jan_14_2020_with_answers.pptx" target="_blank" rel="noopener">PowerPoint</a>
 * Tutorial #14 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_14_jan_21_2020_with_answers.pdf" target="_blank" rel="noopener">PDF</a> <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_14_jan_21_2020_with_answers.pptx" target="_blank" rel="noopener">PowerPoint</a>
 * Tutorial #15 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_15_jan_28_2020_with_answers.pdf" target="_blank" rel="noopener">PDF</a> <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_15_jan_28_2020_with_answers.pptx" target="_blank" rel="noopener">PowerPoint</a>
+* Tutorial #16 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_16_feb_04_2020_with_answers.pdf" target="_blank" rel="noopener">PDF</a> <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_16_feb_04_2020_with_answers.pptx" target="_blank" rel="noopener">PowerPoint</a>
+* Tutorial #17 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_17_feb_11_2020_with_answers.pdf" target="_blank" rel="noopener">PDF</a> <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/semester_02/tutorial_17_feb_11_2020_with_answers.pptx" target="_blank" rel="noopener">PowerPoint</a>
 
 #### Semester 1
 
@@ -62,7 +64,7 @@ menu:
 #### Midterm 3
 
 * Review Slides <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/midterm_03_review_feb_24_2020_without_answers.pdf" target="_blank" rel="noopener">PDF</a> <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/midterm_03_review_feb_24_2020_without_answers.pptx" target="_blank" rel="noopener">PowerPoint</a>
-* Practice Worksheet - BLANK <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/review_sheet_midterm_03_Physiology_2130-BLANK.docx" target="_blank" rel="noopener">PDF</a> 
-* Practice Worksheet - ANSWERS <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/review_sheet_midterm_03_Physiology_2130-ANSWERS.docx" target="_blank" rel="noopener">PDF</a>
-* Diagrams/Tables Worksheet - BLANK <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/diagrams_tables_midterm_03_Physiology_2130-BLANK.docx" target="_blank" rel="noopener">PDF</a> 
-* Diagrams/Tables Worksheet - ANSWERS <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/diagrams_tables_midterm_03_Physiology_2130-ANSWERS.docx" target="_blank" rel="noopener">PDF</a>
+* Practice Worksheet - BLANK <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/review_sheet_midterm_03_Physiology_2130-BLANK.docx" target="_blank" rel="noopener">WORD</a> 
+* Practice Worksheet - ANSWERS <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/review_sheet_midterm_03_Physiology_2130-ANSWERS.docx" target="_blank" rel="noopener">WORD</a>
+* Diagrams/Tables Worksheet - BLANK <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/diagrams_tables_midterm_03_Physiology_2130-BLANK.docx" target="_blank" rel="noopener">WORD</a> 
+* Diagrams/Tables Worksheet - ANSWERS <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/diagrams_tables_midterm_03_Physiology_2130-ANSWERS.docx" target="_blank" rel="noopener">WORD</a>
