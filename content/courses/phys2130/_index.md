@@ -58,3 +58,11 @@ menu:
 * Checklist <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_02/checklist_midterm_02_Physiology_2130.pdf" target="_blank" rel="noopener">PDF</a> 
 * Practice Midterm <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_02/practice_midterm_02_Physiology_2130.pdf" target="_blank" rel="noopener">PDF</a> 
 * Worksheet <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_02/worksheet_midterm_02_Physiology_2130.pdf" target="_blank" rel="noopener">PDF</a> 
+
+#### Midterm 3
+
+* Review Slides <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/midterm_03_review_feb_24_2020_without_answers.pdf" target="_blank" rel="noopener">PDF</a> <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/midterm_03_review_feb_24_2020_without_answers.pptx" target="_blank" rel="noopener">PowerPoint</a>
+* Practice Worksheet - BLANK <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/review_sheet_midterm_03_Physiology_2130-BLANK.docx" target="_blank" rel="noopener">PDF</a> 
+* Practice Worksheet - ANSWERS <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/review_sheet_midterm_03_Physiology_2130-ANSWERS.docx" target="_blank" rel="noopener">PDF</a>
+* Diagrams/Tables Worksheet - BLANK <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/diagrams_tables_midterm_03_Physiology_2130-BLANK.docx" target="_blank" rel="noopener">PDF</a> 
+* Diagrams/Tables Worksheet - ANSWERS <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="files/midterm_03/diagrams_tables_midterm_03_Physiology_2130-ANSWERS.docx" target="_blank" rel="noopener">PDF</a>
