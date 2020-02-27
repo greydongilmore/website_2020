@@ -9,6 +9,7 @@ weight = 50  # Order that this section will appear.
 
 title = "Teaching"
 subtitle = ""
+
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "2"
@@ -47,6 +48,7 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+
 
 I am a teaching instructor for the following courses at Western University:
 
