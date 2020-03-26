@@ -45,7 +45,7 @@ tags = []
 # Links (optional).
 url_pdf = "files/papers/Gilmore et al. 2019 - Forward and backward walking in Parkinson disease.pdf"
 url_preprint = ""
-url_code = ""
+url_code = "code/gilmore_2019/gait_manuscript_analysis.Rmd"
 url_dataset = ""
 url_project = ""
 url_slides = ""
