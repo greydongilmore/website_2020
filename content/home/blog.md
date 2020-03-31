@@ -38,8 +38,8 @@ subtitle = ""
     tag = "*"
   
   [[content.filter_button]]
-    name = "Deep Learning"
-    tag = "Deep Learning"
+    name = "PhD"
+    tag = "PhD"
   
   [[content.filter_button]]
     name = "Other"
