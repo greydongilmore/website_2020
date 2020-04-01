@@ -1,7 +1,7 @@
 ---
 title: Tips on reading academic papers
-subtitle: 
-summary: 
+subtitle: ""
+summary: ""
 authors: 
 - admin
 tags:
