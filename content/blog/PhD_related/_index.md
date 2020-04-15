@@ -1,9 +1,8 @@
 ---
-linktitle: Blog
-aliases: ["/blog/"]
+linktitle: PhD Related
 weight: 1
 
-title: Blog
+title: 
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -14,5 +13,12 @@ type: docs  # Do not modify.
 # - name: Declare this menu item as a parent with ID `name`.
 # - weight: Position of link in menu.
 menu:
-  Blog:
+ Blog:
+    name: PhD Related
+    weight: 1
 ---
+
+# Blog
+---
+
+The blog posts here are related to life as a graduate student. Posts range from things I have learned to rants. Enjoy!

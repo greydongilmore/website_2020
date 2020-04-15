@@ -1,36 +1,28 @@
 ---
-title: Tips on reading academic papers
-subtitle: ""
-summary: ""
-authors: 
-- admin
-tags:
-- PhD
-categories: []
-date: "2020-03-31T00:00:00Z"
-lastMod: "2020-03-31T00:00:00Z"
-featured: false
+title: 
+linktitle: 
+toc: true
+type: docs
+date: "2019-05-05T00:00:00+01:00"
 draft: false
+menu:
+  Blog:
+    parent: PhD Related
+    name: Tips on reading academic papers
+    weight: 1
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: ""
-  focal_point: ""
+# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
+weight: 1
+---
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references 
-#   `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
+# Tips on reading academic papers
 ---
 
 One frequently asked question amoung graduate students is "How do you organize/read manuscripts?". I have found a workflow that works quite well and allows me to stay ontop of the endless amount of new publications.
 
 ## Setup an RSS feed
 ---
+
 The first step to take is setting up an RSS feed so you are notified when a new article is published in an area you are interested in. The RSS manager I use is <a href="https://feedly.com/i/welcome" target="_blank">Feedly</a>, which is simple and easy to use.
 
 1. On the main page, select `Get started for free`. If you do not want to link your social media accounts, select `Continue with Feedly` and use an email address of your choice.
@@ -44,6 +36,7 @@ You can now login and find all recent articles indexed on PubMed about the topic
 
 ## Take Notes
 ---
+
 With any new article I come across, I try to make a quick summary note about it for later reference. A really nice tool for these notes is a software called <a href="https://notable.md/" target="_blank">Notable</a>. Notable is a Markdown based notetaking application that makes sharing notes very open and easy.
 
 1. When you open Notable for the first time you will need to set your data directory. If you want to easily sync/share your notes, create a new Github repository and use that as your Notable data directory.
