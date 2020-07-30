@@ -15,7 +15,7 @@
 
 [[main]]
   name = "Blog"
-  url = "blog/"
+  url = "https://blog-academic.greydongilmore.com/"
   weight = 30
 
 [[main]]
