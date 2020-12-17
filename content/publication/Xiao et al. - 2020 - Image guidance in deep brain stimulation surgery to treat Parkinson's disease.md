@@ -1,6 +1,6 @@
 ---
 title: "Image guidance in deep brain stimulation surgery to treat Parkinson's disease: a comprehensive review"
-authors: ['Yiming Xiao', 'Jonathan Lau', 'Dimuthu Hemachandra', **Greydon Gilmore**', 'Ali Khan', 'Terry Peters']
+authors: ['Yiming Xiao', 'Jonathan Lau', 'Dimuthu Hemachandra', '**Greydon Gilmore**', 'Ali Khan', 'Terry Peters']
 date: "2020-07-02T00:00:00"
 doi: ""
 
