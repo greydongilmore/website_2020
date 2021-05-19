@@ -27,13 +27,13 @@ interests:
 
 education:
   courses:
-  - course: PhD in Biomedical Engineering
+  - course: Ph.D. Biomedical Engineering
     institution: Western University
     year: 2021
-  - course: M.Sc. in Neuroscience
+  - course: M.Sc. Neuroscience
     institution: Western University
     year: 2015
-  - course: B.Sc. in Neuroscience
+  - course: B.Sc. Neuroscience
     institution: Carleton University
     year: 2013
 
@@ -62,12 +62,12 @@ social:
   link: https://github.com/greydongilmore
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+ - icon: cv
+   icon_pack: ai
+   link: files/cv/CVgithub.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "greydon.gilmore@gmail.com"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -76,4 +76,4 @@ user_groups:
 - Visitors
 ---
 
-<p style='text-align: justify;'> <b>Greydon Gilmore</b> is a current Ph.D. Candidate in Biomedical Engineering in the lab of <a href="http://www.schulich.uwo.ca/cns/people/bios_neurologists/bio-jog.html" target="_blank">Dr. Mandar Jog</a> and <a href="https://www.eng.uwo.ca/electrical/faculty/patel_r/index.html" target="_blank">Dr. Rajni Patel</a>. His research interests include deep brain stimulation and localization techniques for electrodes post-operation. He has several industry partnered grants focused on improving precision and outcome of deep brain stimulation surgery for movement disorders.</p>
+<p style='text-align: justify;'> <b>Greydon Gilmore</b> is a current Ph.D. candidate in Biomedical Engineering in the lab of <a href="http://www.schulich.uwo.ca/cns/people/bios_neurologists/bio-jog.html" target="_blank">Dr. Mandar Jog</a> and <a href="https://www.eng.uwo.ca/electrical/faculty/patel_r/index.html" target="_blank">Dr. Rajni Patel</a>. His research interests include deep brain stimulation and localization techniques for electrodes post-operation. He has several industry partnered grants focused on improving precision and outcome of deep brain stimulation surgery for movement disorders.</p>

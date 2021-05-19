@@ -4,48 +4,48 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Home"
+  name = "home"
   url = "#about"
   weight = 10
 
 [[main]]
-  name = "Publications"
+  name = "publications"
   url = "#publications"
   weight = 20
 
 [[main]]
-  name = "Blog"
+  name = "blog"
   url = "https://blog-academic.greydongilmore.com/"
   weight = 30
 
 [[main]]
-  name = "Grants"
+  name = "grants"
   url = "#grants"
   weight = 40
 
 [[main]]
-  name = "Courses"
+  name = "courses"
   url = "courses/"
   weight = 50
   identifier = "courses_main"
 
 [[main]]
-  name = "Phys 2130"
+  name = "phys 2130"
   parent = "courses_main"
   url = "courses/phys2130"
 
 [[main]]
-  name = "Machine Learning"
+  name = "machine learning"
   parent = "courses_main"
   url = "courses/ml_intro"
 
 [[main]]
-  name = "Training"
+  name = "training"
   url = "#training"
   weight = 60
 
 [[main]]
-  name = "Contact"
+  name = "contact"
   url = "#contact"
   weight = 70
 
@@ -57,13 +57,13 @@
   identifier = "cv_main"
   
 [[main]]
-  name = "CV Short"
+  name = "CV short"
   parent = "cv_main"
   url = "files/cv/CVshort.pdf"
   target="_blank"
   
 [[main]]
-  name = "CV Long"
+  name = "CV long"
   parent = "cv_main"
   url = "files/cv/CVgithub.pdf"
   target="_blank"
