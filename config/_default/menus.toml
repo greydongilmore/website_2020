@@ -59,11 +59,11 @@
 [[main]]
   name = "CV short"
   parent = "cv_main"
-  url = "files/cv/CVshort.pdf"
+  url = "files/cv/CVShort_Greydon-Gilmore.pdf"
   target="_blank"
   
 [[main]]
   name = "CV long"
   parent = "cv_main"
-  url = "files/cv/CVgithub.pdf"
+  url = "files/cv/CVLong_Greydon-Gilmore.pdf"
   target="_blank"
