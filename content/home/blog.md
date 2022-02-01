@@ -4,7 +4,7 @@
 
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "Recent Posts"
@@ -40,10 +40,15 @@ subtitle = ""
   [[content.filter_button]]
     name = "PhD"
     tag = "PhD"
-  
   [[content.filter_button]]
-    name = "Other"
-    tag = "Demo"
+    name = "Windows"
+    tag = "Windows"
+  [[content.filter_button]]
+    name = "Ubuntu"
+    tag = "Ubuntu"
+  [[content.filter_button]]
+    name = "Neuro Software"
+    tag = "Neuro Software"
   
 [design]
   # Toggle between the various page layout types.

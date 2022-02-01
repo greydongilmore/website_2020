@@ -1,21 +1,21 @@
 ---
-title: 
-linktitle: 
-toc: true
-type: docs
-date: "2021-07-08T00:00:00+01:00"
-draft: false
-menu:
-  Blog:
-    parent: PhD Related
-    name: Making PDFs Searchable
-    weight: 1
+title: Making PDFs Searchable
+subtitle:
+summary:
+date: "2021-07-28T00:00:00Z"
 
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
----
+reading_time: false  # Show estimated reading time?
+share: false  # Show social sharing links?
+profile: false  # Show author profile?
+comments: false  # Show comments?
+private: false
+tags: ["PhD"]
+authors: ["admin"]
 
-# Making PDFs Searchable
+# Optional header image (relative to `assets/media/` folder).
+header:
+  caption: ""
+  image: ""
 ---
 
 I make use of the advanced search feature in <a href="https://www.zotero.org/" target="_blank">Zotereo</a> frequently, which enables searching through manuscript PDFs. However, when you obtain manuscript PDF files from online databases, they may not be in a searchable format. This means you are unable to highlight and search for text within the PDF. I have written a small Python function that will recursively search though a directory and convert any found PDF to a searchable format.
@@ -24,7 +24,6 @@ Optical Character Recognition (OCR) is a method to enable text recognition withi
 
 
 ## Getting Started
----
 
 The code to perform the bulk OCR conversion can be found in this <a href="https://github.com/greydongilmore/ocr-pdf" target="_blank">GitHub repository</a>. Once you have the project repository stored locally, follow these steps to run OCR on your Zotereo database.
 
